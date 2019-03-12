@@ -52,9 +52,5 @@ route.post('/login', url, function (req, res) {
 
 
 })
-route.get('/logout', function (req, res) {
-  req.logout();
-  res.redirect('/');
-})
 
 module.exports = route;

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var profileRoutes = require('./profile.routes');
 var loginRoutes = require('./login.routes');
+var logoutRoutes = require('./logout.routes');
 
   router.get('/',function(req,res){
 
@@ -19,6 +20,7 @@ var loginRoutes = require('./login.routes');
 
 router.use('/profile',profileRoutes);
 router.use('/auth',loginRoutes);
+router.use('/logout',logoutRoutes);
 
 
 module.exports = router;
